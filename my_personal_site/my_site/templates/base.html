@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Персональный сайт-визитка">
+    <title>Systems Analyst - George</title>
+    {% load static %}
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0f0f0f, #333);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 900px;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .about-me {
+            text-align: center;
+        }
+
+        .about-me h2 {
+            font-size: 28px;
+            color: #5a9;
+        }
+
+        .about-me p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .contacts {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .contacts h3 {
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .contacts a {
+            color: #5a9;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .contacts a:hover {
+            text-decoration: underline;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            color: #5a9;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .links a {
+            color: #5a9;
+        }
+
+        .links a:hover {
+            color: #fff;
+        }
+
+        .social-links a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <section class="about-me">
+            <h2>George Akhmedov</h2>
+            <p>
+I am a Systems Analyst from Moscow, Russia who has a deep understanding of banking platforms and cybersecurity.
+                I am currently employed at Positive Technologies and working on Standoff365</p>
+            <div class="links">
+                <a href="https://standoff365.com/en-US/" target="_blank">learn more...</a>
+            </div>
+        </section>
+
+        <section class="contacts">
+            <h3>Contacts</h3>
+            <p>Email: <a href="mailto:gakhmedov-21@yandex.ru">gakhmedov-21@yandex.ru</a></p>
+            <p>Telegram: <a href="https://t.me/GeorgeSystems">GeorgeSystems</a></p>
+
+            <div class="social-links">
+                <a href="https://gitverse.ru/letscode_g" target="_blank">GitVerse</a>
+                <a href="https://vk.com/gakhmedov_77" target="_blank">VK</a>
+                <a href="{% url 'download_resume' %}" target="_blank">CV</a>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
