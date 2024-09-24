@@ -1,5 +1,5 @@
-#whats that project about
+# whats that project about
 That's my personal site. I primary use it to aggregate general info about me and my social medias
 
-#Tech
+# tech
 Python, DJango
